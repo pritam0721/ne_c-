@@ -55,7 +55,7 @@ qs (vector<int> &a, int l, int h)
 int
 main ()
 {
-  vector<int> a = { 10, 16, 8, 12, 15, 6, 3, 9, 5 };
+  vector<int> a = { 4, 16, 8, 12, 15, 6, 3, 9, 5 };
   a.push_back (INT_MAX);
   qs (a, 0, a.size () - 1);
 
