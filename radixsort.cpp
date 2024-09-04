@@ -10,22 +10,22 @@ void
 countSort (vector<int> &arr, int exp)
 {
   vector<int> count[10];
-  vector<int> pars;
+  // vector<int> pars;
   for (int i = 0; i < arr.size (); i++)
     {
       int d = (arr[i] / exp) % 10;
       count[d].push_back (arr[i]);
     }
-
+  arr.clear ();
   for (int i = 0; i < 10; i++)
     {
       for (int j = 0; j < count[i].size (); j++)
         {
-          pars.push_back (count[i][j]);
+          arr.push_back (count[i][j]);
         }
     }
 
-  arr = pars;
+  // arr = pars;
 }
 
 void
