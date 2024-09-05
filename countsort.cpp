@@ -6,11 +6,12 @@ conuntSort (vector<int> &arr)
 {
   int max = *max_element (arr.begin (), arr.end ());
 
-  vector<int> c (max + 1,0) ;
-
-   for(auto x : arr){
+  vector<int> c (max + 1, 0);
+  for (auto x : arr)
+    {
       c[x]++;     
    }
+   // ! you also can apply the while
    arr.clear();
    int i = 0;
    for(auto x : c){
